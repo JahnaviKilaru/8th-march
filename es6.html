@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<!-- 	<script type="text/javascript">
+		/*"user strict"
+		var s=56;
+		console.log("outside the function",s)
+		function rack(){
+			var d="sam"
+			console.log("inside the function",s,d)
+		}
+		rack()*/
+		//console.log(d)
+
+		/*const k=1000
+		console.log(k)
+		k="rak"*///this will throws an error
+		var arr=[23,54,56],dummy=[]
+		//console.log(arr)
+		/*for(var p=0;p<arr.length;p++){
+			console.log(arr[p])
+			dummy[p]=arr[p]+10
+			console.log(dummy)
+		}*/
+		dummy=arr.map(function(p){
+			//console.log(p)
+			return p+10
+		})
+		console.log(dummy)
+		
+	</script> -->
+    <script type="text/javascript">
+    	var arr=[34,200,38,92,126],dummy=[]
+    	/*dummy=arr.map(function(p){
+    		if(p>90)
+    			return p
+    	})*/
+    	//console.log(dummy)
+    	dummy=arr.filter(function(p){
+    		return p>90
+    	})
+    	console.log(dummy)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
